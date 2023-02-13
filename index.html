@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering App</title>
+</head>
+<body>
+    <header class="container">
+        <h1>Hamna's Burger Lab</h1>
+        <h3>Let's get this Patty started!</h3>
+    </header>
+
+    <main class="container">
+        <!-- Menu -->
+         <section id="menu"></section>
+
+         <!-- Order Preview -->
+        <section id="order-preview" class="order-preview">
+            <h2 class="center">Your order</h2>
+            <div class="order" id="order"></div>
+           <hr class="total-hr">
+           <div class="order-spacing">
+               <h2>Total Price:</h2>
+                <p id="total-price"></p>
+           </div>
+           <button id="order-btn" type="button" class="complete-order-pay-btn">Complete order</button>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="inner-modal">
+            <h2 class="center">Enter card details</h2>
+            <form id="form-data" action="">
+                <input 
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                aria-label="your name goes here"
+                required
+                />
+                <input 
+                type="number"
+                id="card-number"
+                maxlength="16"
+                placeholder="Enter card number"
+                aria-label="your card number goes here"
+                required
+                />
+                <input 
+                type="number"
+                id="CVV"
+                maxlength="3"
+                placeholder="Enter CVV"
+                aria-label="your card CVV number goes here"
+                required
+                />
+                <button id="pay-btn" type="submit" class="complete-order-pay-btn">Pay</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
+
+
+

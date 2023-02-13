@@ -1,0 +1,228 @@
+/* Smythe Font */
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+
+/* Inter Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+.container {
+    max-width:600px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+
+/* =================  Typography =================  */
+h1, h2, h3, p {
+    margin:5px 0;
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 60px;    
+}
+
+h2 {
+    font-size:25px;
+}
+
+h3{
+    font-size: 15px;
+}
+
+header h3 {
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.item-details p{
+    font-size: 12px;  
+    color:#8B8B8B;  
+}
+
+.center {
+    text-align: center;
+    margin-bottom:30px;
+}
+
+/* =================  Images =================  */
+.food-img {
+    font-size: 79px;
+}
+
+/* =================  Buttons =================  */
+.add-btn {
+    background-color:#fff;
+    border: 1.5px solid #DEDEDE;
+    border-radius:50%;
+    align-self: center;
+    width:40px;
+    height:40px;
+    font-family: 'Inter', sans-serif;
+    font-size:25px;
+    text-align: center;
+    font-weight:200;
+}
+
+.add-btn:hover {
+    background-color:#16DB99;
+    border:none;
+    color:#fff;
+}
+
+.remove-btn{
+    background-color: transparent;
+    border:none;
+    color:#BBBBBB;
+    font-size: 12px;
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+}
+
+.complete-order-pay-btn {
+    width:100%;
+    background-color: #16DB99;
+    border:none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    padding:18px 170px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#fff;
+    font-weight: 700;
+    margin: 25px auto;
+}
+
+.complete-order-pay-btn:hover{
+    background-color: #198e67;
+}
+
+/* ================= Dividers =================  */
+hr {
+    border: 1px solid #D2D2D2;
+}
+
+.total-hr {
+    border:1px solid #393333;
+    margin:14px 0;
+}
+
+/* ================= Layout =================  */
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Smythe', sans-serif;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+header {
+    background-image: url('https://i.ibb.co/njqBVVW/header-image.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color:#fff;
+    padding: 39px;
+    height: 300px;
+}
+
+main {
+    height:800px;
+}
+
+/* ================= Menu ================= */
+section {
+    padding:40px;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items:center;
+    gap:31px;
+}
+
+/* ================= Order Preview  ================= */
+.order-preview {
+    display:none;
+    padding-top:0;
+}
+
+.order {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.order-spacing {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.ordered-item {
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+/* ================= MODAL =================  */
+.modal  {
+    display:none;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+    width: 524px;
+    height: 542.24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.inner-modal {
+    background-color: #fff;
+    padding:47px 24px 0px 24px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 50px black;
+}
+
+/* Form */
+input {
+    display: block;
+    width:100%;
+    margin:10px 0;
+    padding:15px 20px;
+    font-family: inherit;
+    /* border: 1.3px solid #757575; */
+}
+
+/* ================= Order is complete =================  */
+.order-is-complete{
+    color:#065F46;
+    background-color:#ECFDF5;
+    width:504px;
+    height:120px;
+    border-radius:3px;
+    text-align: center;
+    padding:25px;
+    font-size: 30px;
+}
+
+.order-is-complete p {
+    margin:auto;
+}
+
+
