@@ -16,6 +16,13 @@
     background-color: #fff;
 }
 
+@media only screen and (max-width: 37.5em) {
+    header.container {
+        height:200px;
+        padding:10px;
+    }
+}
+
 
 /* =================  Typography =================  */
 h1, h2, h3, p {
@@ -23,7 +30,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-    font-size: 45px;
+    font-size: calc(30px + 1vw);
     line-height: 60px;    
 }
 
@@ -40,9 +47,19 @@ header h3 {
     font-weight: 100;
 }
 
+.order-is-complete p {
+    font-size: 19px;
+}
+
 .item-details p{
     font-size: 12px;  
     color:#8B8B8B;  
+}
+
+@media only screen and (max-width: 37.5em) {
+    .item-details p {
+        max-width:60px;
+    }
 }
 
 .center {
@@ -140,6 +157,12 @@ section {
     padding:40px;
 }
 
+@media only screen and (max-width: 37.5em) {
+    section {
+        padding:20px;
+    }
+}
+
 .menu {
     display:flex;
     justify-content: space-between;
@@ -149,7 +172,7 @@ section {
 .menu-item {
     display: flex;
     align-items:center;
-    gap:31px;
+    gap:10px;
 }
 
 /* ================= Order Preview  ================= */
@@ -181,13 +204,11 @@ section {
 .modal  {
     display:none;
     position:fixed;
-    top:0;
+    top:70px;
     bottom:0;
     left:0;
     right:0;
     margin:auto;
-    width: 524px;
-    height: 542.24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
@@ -206,15 +227,12 @@ input {
     margin:10px 0;
     padding:15px 20px;
     font-family: inherit;
-    /* border: 1.3px solid #757575; */
 }
 
 /* ================= Order is complete =================  */
 .order-is-complete{
     color:#065F46;
     background-color:#ECFDF5;
-    width:504px;
-    height:120px;
     border-radius:3px;
     text-align: center;
     padding:25px;
@@ -224,5 +242,3 @@ input {
 .order-is-complete p {
     margin:auto;
 }
-
-
